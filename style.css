@@ -1,10 +1,152 @@
+@media (min-width: 882px) {
+	.signup-btn {
+		top: 40px;
+		right: 80px;
+	}
+}
+
 *{
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
 }
+body {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+/* unvisited link */
+a:link {
+	color: unset;
+    text-decoration:none;
+}
+
+/* visited link */
+a:visited {
+	color: unset;
+    text-decoration:none;
+}
+
+/* mouse over link */
+a:hover {
+	color: unset;
+    text-decoration:none;
+}
+
+/* selected link */
+a:active {
+	color: unset;
+    text-decoration:none;
+}
+
 .container{
 	width: 100%;
 	height: 100%;
 	background: #42455a;
 }
+.navbar a{
+	text-decoration: none;
+}
+.navbar ul {
+	display: inline-flex;
+	float: center;
+	flex-wrap: wrap; /*For Mobile phones*/
+	margin: 50px;
+}
+.navbar ul li{
+	line-style: none;
+	margin: 0 20px;
+	color: #b2b1b1;
+	cursor: pointer;
+}
+.navbar ul li:hover{
+	color: #FBFAF5 !important; /*Using Important to reflect on Active Marked tab*/
+}
+.logo img{
+	margin-right: 32px;
+	margin-top: -23px;
+}
+.active {
+	color: #19dafa !important;
+}
+.signup-btn {
+	position: absolute;
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid transparent;
+	border-radius: 20px;
+	background-image: linear-gradient(#42455a, #42455a),radial-gradient(circle at top left,#fd00da,#19d7f8);
+	background-origin: border-box;
+	background-clip: content-box,border-box;
+}
+.signup-btn span {
+	display: block;
+	padding: 8px 22px;
+}
+.scene1 {
+	background-image: url(Images/BackDrop.png);
+	  /* Full height */
+	height: 100%;
+
+	  /* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+  	background-size: cover;
+	height: 100vw;
+	width: 100%;
+}
+.banner {
+	display: block;
+	width: 80%;
+	margin: 4% 10% 5% 10%;
+}
+
+.app-picture {
+}
+
+.app-picture img {
+	width: 100%;
+}
+
+.app-picture-text {
+	width: 100%;
+	position: relative;
+	margin-top: -40%;
+}
+
+.app-picture-text {
+	text-align: center;
+	color: #fff;
+	font-size: 2vw;
+}
+
+.app-picture-text h1 {
+	margin-bottom: 20px;
+	letter-spacing: 20px; 
+	font-size: 5vw;
+	font-family: 'Bangers', cursive;
+	/*Animation Text*/
+	animation: textAnimation1 1s 1;
+}
+
+.scene1-centertext {
+	text-align: center;
+	margin-top: 50%;
+}
+
+@keyframes textAnimation1 {
+	0% {
+		color: #000;
+		opacity: 25%;
+		margin-bottom: -40px;
+	}
+	100% {
+		color: #fff;
+		opacity: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+
+
